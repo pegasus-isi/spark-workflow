@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitecatalog xmlns="http://pegasus.isi.edu/schema/sitecatalog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pegasus.isi.edu/schema/sitecatalog http://pegasus.isi.edu/schema/sc-4.1.xsd" version="4.1">
+
+    <!-- The local site contains information about the submit host -->
+    <site handle="local" arch="x86_64" os="LINUX">
+        <directory type="shared-scratch" path="/home/hadoop/scratch">
+            <file-server operation="all" url="file:///home/hadoop/scratch"/>
+        </directory>
+        <directory type="shared-storage" path="/home/hadoop/output">
+            <file-server operation="all" url="file:///home/hadoop/output"/>
+        </directory>
+	<profile namespace="env" key="JAVA_HOME">/usr/java/jdk1.8.0_112/jre/</profile>
+	<profile namespace="env" key="HOME">/home/hadoop</profile>
+    </site>
+
+    <site handle="condorpool" arch="x86_64" os="LINUX">
+        <profile namespace="pegasus" key="style">condor</profile>
+        <profile namespace="condor" key="universe">vanilla</profile>
+    </site>
+
+</sitecatalog>

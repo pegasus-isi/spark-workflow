@@ -1,0 +1,36 @@
+tr setup-job {
+    site local {
+        pfn "/home/hadoop/workflow/bin/install_spark.sh"
+        arch "x86_64"
+        os "LINUX"
+        type "INSTALLED"
+    }
+}
+
+tr copy-job {
+    site local {
+        pfn "/home/hadoop/workflow/bin/hdfs_copy.sh"
+        arch "x86_64"
+        os "LINUX"
+        type "INSTALLED"
+    }
+}
+
+tr wc-job {
+    site local {
+        pfn "/home/hadoop/workflow/bin/wordcount.sh"
+        arch "x86_64"
+        os "LINUX"
+        type "INSTALLED"
+    }
+}
+
+tr remove-job {
+    site local {
+        pfn "/home/hadoop/workflow/bin/remove_spark.sh"
+        arch "x86_64"
+        os "LINUX"
+        type "INSTALLED"
+    }
+}
+

@@ -1,0 +1,1 @@
+apache spark is a fast, real time and extremely expressive computing system which executes job in distributed (clustered) environment.
