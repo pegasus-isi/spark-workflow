@@ -1,4 +1,6 @@
-# Spark Workflow
+# Apache Spark Workflow
+
+This is an example Pegasus workflow for deploying [Apache Spark](http://spark.apache.org/) + [Apache Hadoop](http://hadoop.apache.org/) (Yarn) on the fly (as a workflow job), and run a simple word count program.
 
 Requirements
 ------------
@@ -6,8 +8,12 @@ This workflow assumes that SSH connections without password from the submit host
 
 Generating a Workflow
 ---------------------
-Run the generate_dax.sh script.
+```
+$ ./generate_dax.sh spark.dax
+```
 
 Running a Workflow
 -------------------
-Run the plan_dax.sh script.
+```
+$ ./plan_dax.sh spark.dax
+```
