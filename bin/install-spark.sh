@@ -61,7 +61,7 @@ export HADOOP_CONF_DIR=\$HADOOP_PREFIX/etc/hadoop
 export HADOOP_HDFS_HOME=\$HADOOP_PREFIX
 export HADOOP_MAPRED_HOME=\$HADOOP_PREFIX
 export HADOOP_YARN_HOME=\$HADOOP_PREFIX
-export PATH=\$PATH:\$HADOOP_PREFIX/sbin:\$HADOOP_PREFIX/bin
+export PATH=\$HADOOP_PREFIX/sbin:\$HADOOP_PREFIX/bin:\$PATH
 
 EOL
 done
@@ -201,11 +201,7 @@ EOL
 
 # Add list of slaves on master
 echo "  Adding list of slaves on master"
-cat > $HADOOP_PREFIX/etc/hadoop/slaves << EOL
-submit
-worker1
-worker2
-EOL
+cat $HOSTS >> $HADOOP_PREFIX/etc/hadoop/slaves
 
 
 # Format NameNode
