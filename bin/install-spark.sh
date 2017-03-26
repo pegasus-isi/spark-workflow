@@ -75,7 +75,7 @@ cat > $HADOOP_PREFIX/etc/hadoop/core-site.xml << EOL
 <configuration>
 <property>
     <name>fs.defaultFS</name>
-    <value>hdfs://submit:9000/</value>
+    <value>hdfs://${hosts[0]}:9000/</value>
 </property>
 </configuration>
 EOL

@@ -4,10 +4,10 @@
 # The format is:
 # LFN     PFN    pool="SITE"
 
-#hadoop.tgz http://apache.parentingamerica.com/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz site="local"
-#spark.tgz http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.7.tgz site="local"
+hadoop.tgz http://apache.parentingamerica.com/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz site="local"
+spark.tgz http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.7.tgz site="local"
 
-hadoop.tgz file:///mnt/spark/hadoop-2.7.3.tar.gz site="local"
-spark.tgz file:///mnt/spark/spark-2.1.0-bin-hadoop2.7.tgz site="local"
-hosts.txt file:////home/hadoop/workflow/input/hosts.txt site="local"
-sample.txt file:////home/hadoop/workflow/input/sample.txt site="local"
+#hadoop.tgz file:///home/hadoop/spark-workflow/input/hadoop.tgz site="local"
+#spark.tgz file:///home/hadoop/spark-workflow/input/spark.tgz site="local"
+hosts.txt file:////home/hadoop/spark-workflow/input/hosts.txt site="local"
+sample.txt file:////home/hadoop/spark-workflow/input/sample.txt site="local"

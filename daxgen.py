@@ -49,7 +49,7 @@ dax.depends(copy_job, setup_job)
 
 # Word count job
 wc_job = Job("word-count")
-wc_job.addArguments("sample.txt")
+wc_job.addArguments(sample.name)
 dax.addJob(wc_job)
 dax.depends(wc_job, copy_job)
 
