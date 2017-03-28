@@ -6,6 +6,10 @@ Requirements
 ------------
 This workflow assumes that SSH connections without password from the submit host to workers are enabled.
 
+The workflow input files include:
+- `hosts.txt`: A list of hosts for deploying the Apache Hadoop + Spark system. The first line of the file should contain the **master** host, and the remaining lines a set of **slave** hosts.
+- `sample.txt`: A simple text file to be used by the word count program.
+
 Generating a Workflow
 ---------------------
 ```
