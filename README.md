@@ -2,6 +2,8 @@
 
 This is an example Pegasus workflow for deploying [Apache Spark](http://spark.apache.org/) + [Apache Hadoop](http://hadoop.apache.org/) (Yarn) on the fly (as a workflow job), and run a simple word count program.
 
+<img src="docs/workflow.png?raw=true" width="60%" />
+
 Requirements
 ------------
 This workflow assumes that SSH connections without password from the submit host to workers are enabled.
